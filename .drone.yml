@@ -52,8 +52,8 @@ steps:
       from_secret: DOCKER_USERNAME
     password:
       from_secret: DOCKER_PASSWORD
-    target: lansible/zigbee2mqtt:latest
-    template: lansible/zigbee2mqtt:${DRONE_TAG:-master}-ARCH
+    target: lansible/dnstools:latest
+    template: lansible/dnstools:${DRONE_TAG:-master}-ARCH
     platforms:
     - linux/amd64
     - linux/arm64
